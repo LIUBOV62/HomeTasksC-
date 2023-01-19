@@ -83,10 +83,156 @@ Console.WriteLine("Hello, World!");
 //     m = m + 1;      m++;     
 // }
 
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(n % 10);
+
+// Второй семинар
+
+//  Домашнее задание семинара № 1
+
+//  Задача  2: Напишите программу, которая на вход принимает
+//   два числа,какое число большее, а какое  меньшее.
+// Console.Clear();
+// Console.Write("Введите 1-ое число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите 2-ое число: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// if(n > m) 
+//    Console.Write($" max {n},min {m} ");
+// else if(n < m)
+//    Console.Write($" max {m},min {n} ");
+// else   
+//    Console.Write("=");
+
+// Задача 4:  Напишите программу, которая на вход принимает
+//   три числа и выдаёт максимальное из этих чисел.
+//  Console.Clear();
+// Console.Write("Введите 1-ое число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите 2-ое число: ");
+// int b = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите 3-е число: ");
+// int c = Convert.ToInt32(Console.ReadLine()),max = a;
+// if(max < b)
+//    max = b;
+// if(max < c)
+//    max = c; 
+// Console.Write(max);
+
+// Второй способ
+// Console.Clear();
+// Console.Write("Введите 1-ое число: ");
+// int d = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите 2-ое число: ");
+// int i = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите 3-е число: ");
+// int f = Convert.ToInt32(Console.ReadLine()),max = d;
+
+// if(i >= max && i >= f)
+//     Console.Write(i);
+// else 
+//     Console.Write(f);
+
+// Задача 6:  Напишите программу, которая на вход принимает
+//   число и выдаёт, является ли число чётным (делится ли оно на  два без остатка).
+
+// Console.Clear();
+// Console.Write("Введите 1-ое число: ");
+// int g = Convert.ToInt32(Console.ReadLine());
+// if (g %2 == 0)
+//     Console.Write("Чётное");
+// else
+//     Console.Write("Нечётное"); 
+
+// Задача 8 Напишите программу, которая на вход принимает число (N),
+//          а на выходе показывает все чётные числа от 1 до N. 
+
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int h = Convert.ToInt32(Console.ReadLine()), count = 2;
+// while (count <= h)
+// {
+//       Console.Write($"{count} ");  
+//       count = count + 2;
+// }
+// Второй способ 
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int j = Convert.ToInt32(Console.ReadLine());
+// for(int i = 2; i <= j; i += 2 )    // begin, condition, step
+// Console.Write($"{i}");
+
+
+// СЕМИНАР 2
+
+// Задача: Напишите программу, которая выводит случайное число из отрезка [10, 99]
+        // и показывает наибольшую цифру числа.
+// Console.Clear();
+// int p =new Random().Next(10, 100);    
+// // тогда будут включены[10, 99] 
+// Console.WriteLine($"Случайное число: {p}");
+// int p1 = p / 10;
+// int p2 = p % 10;
+// if (p1 > p2)
+// Console.WriteLine(p1);
+// else
+// Console.WriteLine(p2);
+
+// ЗАДАЧА 11: Напишите программу, которая выводит случайное трёхзначное число 
+          //  и удаляет вторую цифру этого числа.(456 -> 46  782 ->72  918 -> 98)
+
+// Console.Clear();
+// int t = new Random().Next(100, 1000);    
+// // тогда будут включены[100, 999] 
+// Console.WriteLine($"Случайное число: {t}");
+// int t1 = t / 100;
+// int t3 = t % 10;
+
+// Console.WriteLine(t1 * 10 + t3);
+
+// ЗАДАЧА 12: Напишите программу, которая будет принимать на вход 
+//            два числа и выводить, является ли второе число кратным первому.
+//            Если число 2 не кратно числу 1, то программа выводит остаток от деления.
+// Console.Clear();
+// Console.Write("Введите 1-ое число: ");
+// int s = Convert.ToInt32(Console.ReadLine()); 
+// Console.Write("Введите 2-ое число: ");
+// int k = Convert.ToInt32(Console.ReadLine());
+// if (s % k == 0)
+//     Console.WriteLine("Yes");
+// else
+//     Console.WriteLine($"No, {s % k}");
+
+// Задача  14: Напишите программу, которая на вход принимает число и проверяет,
+//             кратно ли оно одновременно 7 и 23.
+
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// if (a % 7 == 0 && a % 23 == 0)
+//     Console.WriteLine("Yes");
+// else
+//     Console.WriteLine("No");
+
+// Второй способ (Вводим наименьшее общее кратное для 7 и 23 т.е. 161)
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// if (a % 161 == 0 )
+//     Console.WriteLine("Yes");
+// else
+//     Console.WriteLine("No");
+
+// ЗАДАЧА 16: Напишите программу, которая на вход принимает два числа 
+//            и проверяет , является ли одно число квадратом другого.
 Console.Clear();
-Console.Write("Введите число: ");
+Console.Write("Введите 1-ое число");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(n % 10);
-
-    
-
+Console.Write("Введите 2-ое число");
+int m = Convert.ToInt32(Console.ReadLine());
+if (n * n == m || m * m == n)
+    Console.WriteLine("Yes");
+else
+    Console.WriteLine("No");
