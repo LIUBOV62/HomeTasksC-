@@ -234,5 +234,5 @@ Console.Write("Введите 2-ое число");
 int m = Convert.ToInt32(Console.ReadLine());
 if (n * n == m || m * m == n)
     Console.WriteLine("Yes");
-else
+
     Console.WriteLine("No");
