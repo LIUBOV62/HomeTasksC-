@@ -1,0 +1,15 @@
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\bin\Debug\net6.0\HomeTask_DOP2.exe
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\bin\Debug\net6.0\HomeTask_DOP2.deps.json
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\bin\Debug\net6.0\HomeTask_DOP2.runtimeconfig.json
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\bin\Debug\net6.0\HomeTask_DOP2.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\bin\Debug\net6.0\HomeTask_DOP2.pdb
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.csproj.AssemblyReference.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.AssemblyInfoInputs.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.AssemblyInfo.cs
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\refint\HomeTask_DOP2.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.pdb
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\HomeTask_DOP2.genruntimeconfig.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_DOP2\obj\Debug\net6.0\ref\HomeTask_DOP2.dll
