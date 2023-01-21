@@ -68,9 +68,9 @@ Console.WriteLine("Hello, World!");
 // else if (n == 5)
 //       Console.WriteLine("Пятница");
 // else if (n == 6)
-//       Console.WriteLine("Суббота");
+//       Console.WriteLine("Суббота.Выходной ");
 // else
-//       Console.WriteLine("Воскресенье");
+//       Console.WriteLine("Воскресенье.Выходной ");
 
 
 // Console.Clear();
@@ -227,12 +227,68 @@ Console.WriteLine("Hello, World!");
 
 // ЗАДАЧА 16: Напишите программу, которая на вход принимает два числа 
 //            и проверяет , является ли одно число квадратом другого.
-Console.Clear();
-Console.Write("Введите 1-ое число");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите 2-ое число");
-int m = Convert.ToInt32(Console.ReadLine());
-if (n * n == m || m * m == n)
-    Console.WriteLine("Yes");
+// Console.Clear();
+// Console.Write("Введите 1-ое число");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите 2-ое число");
+// int m = Convert.ToInt32(Console.ReadLine());
+// if (n * n == m || m * m == n)
+//     Console.WriteLine("Yes");
 
-    Console.WriteLine("No");
+//     Console.WriteLine("No");
+
+// СЕМИНАР №3 
+// Домашняя работа
+// ЗАДАЧА 13: Напишите программу, которая выводит третью цифру заданного числа
+        //    или сообщает, что третьей цифры  нет.
+// Console.Clear();
+// Console.Write("Введите 1-ое число");
+// int n = Convert.ToInt32(Console.ReadLine());
+// if (n < 100)
+// Console.WriteLine("Третьей цифры нет ");
+// else
+// {
+//         while (n >= 1000)
+//         {
+//                 n = n / 10;
+//         }
+//         Console.WriteLine(n);
+//         Console.WriteLine(n % 10);
+// }
+
+// ЗАДАЧА Напишите программу, которая на вход принимает последовательность 
+//        натуральных чисел, завершающихся числом 0, а выдаёт второе
+        // максимальное число в этой последовательности. 
+ Console.Clear();
+Console.Write("Введите число: ");
+int n = Convert.ToInt32(Console.ReadLine()),max1 = n, max2 = 0; 
+while (n != 0)
+
+{
+       Console.Write("Введите число: ");
+       n = Convert.ToInt32(Console.ReadLine());
+       if (n > max1)
+       {
+           max2 = max1;
+           max1 = n;
+       } 
+       else if (n > max2)
+                max2 = n;
+}
+Console.Write("Второй максимум: ");
+Console.WriteLine(max2);
+
+// ЗАДАЧА 7
+// Console.Clear();
+// Console.Write("Введите координату  X: ");
+// double X = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите координату  Y: ");
+// double Y = Convert.ToDouble(Console.ReadLine());
+// if (X > 0 && Y > 0)
+// Console.WriteLine("|");
+// else if (X < 0 && Y > 0)
+// Console.WriteLine("||");
+// else if (X < 0 && Y < 0)
+// Console.WriteLine("|||");
+// else 
+// Console.WriteLine("|V");
