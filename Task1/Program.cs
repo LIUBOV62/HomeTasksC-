@@ -278,26 +278,61 @@ Console.WriteLine("Hello, World!");
 // Console.Write("Второй максимум: ");
 // Console.WriteLine(max2);
 
-// ЗАДАЧА 17
-// 
+// ЗАДАЧА 17:Напишите программу, которая пирнимает на вход координаты ( Х и У), 
+//           причём Х != 0 и Y != 0 выдаёт номер четверти плоскости,
+        //   в которой находится эта точка.
+// Console.Clear();
+// Console.Write("Введите координату  X: ");
+// double X = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите координату  Y: ");
+// double Y = Convert.ToDouble(Console.ReadLine());
+// while (X == 0 || Y == 0)
+// {
+//       Console.WriteLine("Вы ошиблись! Введите координаты заново: ");
+//       Console.Write("Введите координату  X: ");
+//       X = Convert.ToDouble(Console.ReadLine());
+//       Console.Write("Введите координату  Y: ");
+//       Y = Convert.ToDouble(Console.ReadLine());      
+// }
+// if (X > 0 && Y > 0)
+//       Console.WriteLine("|");
+// else if (X < 0 && Y > 0)
+//       Console.WriteLine("||");
+// else if (X < 0 && Y < 0)
+//       Console.WriteLine("|||");
+// else 
+//       Console.WriteLine("|V");
+//  Второй способ (без проверки  Х и У на 0)
+
+//  Console.Clear();
+// Console.Write("Введите координату  X: ");
+// double X = Convert.ToDouble(Console.ReadLine());
+// Console.Write("Введите координату  Y: ");
+// double Y = Convert.ToDouble(Console.ReadLine());
+// //if (X > 0 && Y > 0)
+//       Console.WriteLine("|");
+// else if (X < 0 && Y > 0)
+//       Console.WriteLine("||");
+// else if (X < 0 && Y < 0)
+//       Console.WriteLine("|||");
+// else 
+//       Console.WriteLine("|V"); 
+
+// Задача 18: Напишите программу, которая по заданному номеру четверти,
+//            показывает дапазон возможных координат точек вэтой четверти(Х и У).∞
 Console.Clear();
-Console.Write("Введите координату  X: ");
-double X = Convert.ToDouble(Console.ReadLine());
-Console.Write("Введите координату  Y: ");
-double Y = Convert.ToDouble(Console.ReadLine());
-while (X == 0 || Y == 0)
+Console.Write("Введите номер четверти: ");
+int n = Convert.ToInt32(Console.ReadLine());
+while (n < 1 || n > 4)
 {
-      Console.WriteLine("Вы ошиблись! Введите координаты заново: ");
-      Console.Write("Введите координату  X: ");
-      X = Convert.ToDouble(Console.ReadLine());
-      Console.Write("Введите координату  Y: ");
-      Y = Convert.ToDouble(Console.ReadLine());      
+Console.WriteLine("Вы ошиблись!\nВведите число: ");
+n = Convert.ToInt32(Console.ReadLine());
 }
-if (X > 0 && Y > 0)
-      Console.WriteLine("|");
-else if (X < 0 && Y > 0)
-      Console.WriteLine("||");
-else if (X < 0 && Y < 0)
-      Console.WriteLine("|||");
-else 
-      Console.WriteLine("|V");
+if (n == 1)
+Console.WriteLine("x(0, +∞) and y(0, +∞)");
+else if (n == 2)
+Console.WriteLine("x -∞, 0 and y 0, +∞ ");
+else if (n == 3)
+Console.WriteLine("x -∞, 0 and y -∞, 0 ");
+else
+Console.WriteLine("x(0, +∞) and y(-∞, 0)");
