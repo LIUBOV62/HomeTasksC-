@@ -259,36 +259,45 @@ Console.WriteLine("Hello, World!");
 // ЗАДАЧА Напишите программу, которая на вход принимает последовательность 
 //        натуральных чисел, завершающихся числом 0, а выдаёт второе
         // максимальное число в этой последовательности. 
- Console.Clear();
-Console.Write("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine()),max1 = n, max2 = 0; 
-while (n != 0)
+//  Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine()),max1 = n, max2 = 0; 
+// while (n != 0)
 
+// {
+//        Console.Write("Введите число: ");
+//        n = Convert.ToInt32(Console.ReadLine());
+//        if (n > max1)
+//        {
+//            max2 = max1;
+//            max1 = n;
+//        } 
+//        else if (n > max2)
+//                 max2 = n;
+// }
+// Console.Write("Второй максимум: ");
+// Console.WriteLine(max2);
+
+// ЗАДАЧА 17
+// 
+Console.Clear();
+Console.Write("Введите координату  X: ");
+double X = Convert.ToDouble(Console.ReadLine());
+Console.Write("Введите координату  Y: ");
+double Y = Convert.ToDouble(Console.ReadLine());
+while (X == 0 || Y == 0)
 {
-       Console.Write("Введите число: ");
-       n = Convert.ToInt32(Console.ReadLine());
-       if (n > max1)
-       {
-           max2 = max1;
-           max1 = n;
-       } 
-       else if (n > max2)
-                max2 = n;
+      Console.WriteLine("Вы ошиблись! Введите координаты заново: ");
+      Console.Write("Введите координату  X: ");
+      X = Convert.ToDouble(Console.ReadLine());
+      Console.Write("Введите координату  Y: ");
+      Y = Convert.ToDouble(Console.ReadLine());      
 }
-Console.Write("Второй максимум: ");
-Console.WriteLine(max2);
-
-// ЗАДАЧА 7
-// Console.Clear();
-// Console.Write("Введите координату  X: ");
-// double X = Convert.ToDouble(Console.ReadLine());
-// Console.Write("Введите координату  Y: ");
-// double Y = Convert.ToDouble(Console.ReadLine());
-// if (X > 0 && Y > 0)
-// Console.WriteLine("|");
-// else if (X < 0 && Y > 0)
-// Console.WriteLine("||");
-// else if (X < 0 && Y < 0)
-// Console.WriteLine("|||");
-// else 
-// Console.WriteLine("|V");
+if (X > 0 && Y > 0)
+      Console.WriteLine("|");
+else if (X < 0 && Y > 0)
+      Console.WriteLine("||");
+else if (X < 0 && Y < 0)
+      Console.WriteLine("|||");
+else 
+      Console.WriteLine("|V");
