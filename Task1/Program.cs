@@ -360,22 +360,21 @@ Console.WriteLine("Hello, World!");
 // int n = Convert.ToInt32(Console.ReadLine());
 // for (int i = 1; i <= n; i++)
 // Console.Write($"{Math.Pow(i, 2)} ");
- 
-// Console.Clear();
-// Console.Write("Введите пятизначное число: ");
-// int n = Convert.ToInt32(Console.ReadLine());
 
-       
-// int a1 =n/1000;
-// int a =a1 %100;
-// int a5 = n%10;
-// int a4 =a/10;
-// int a6 =a4 %10;
-// int b =a5 *10 + a6;
-// if (a == b)
-// Console.WriteLine("Полидром");
-// else      
-// Console.WriteLine("НЕ полидром");
+// Задача 19 Напишите программу, которая принимает на вход пятизначное число и проверяет,
+//           является ли оно палиндромом. 14212 -> нет, 12821 -> да, 23432 -> да
+
+Console.Clear();
+Console.Write("Введите пятизначное число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int n1 = n / 10000;
+int n2 = (n / 1000) % 10;
+int n4 = (n % 100) / 10;
+int n5 = n % 10;
+if (n1 == n5 && n2 == n4)
+       Console.WriteLine("Палиндром");
+else      
+       Console.WriteLine("НЕ палиндром");
 
 
 //  Задача 21: Напишите программу, которая принимает на вход координаты двух точек 
@@ -402,8 +401,8 @@ Console.WriteLine("Hello, World!");
 //           3 -> 1, 8, 27
 //           5 -> 1, 8, 27, 64, 125
 
- Console.Clear();
-Console.Write("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-for (int i = 1; i <= n; i++)
-Console.Write($"{Math.Pow(i, 3)} ");
+//  Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// for (int i = 1; i <= n; i++)
+// Console.Write($"{Math.Pow(i, 3)} ");
