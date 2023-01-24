@@ -469,7 +469,20 @@ Console.WriteLine("Hello, World!");
 // Task 24
 
 
+// Console.Clear();
+// Console.Write("Введите число: ");
+// double n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"Результат: {(1 + n) / 2 * n}");
+
+// Task 26
+
+
 Console.Clear();
 Console.Write("Введите число: ");
-double n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"Результат: {(1 + n) / 2 * n}");
+int n = Convert.ToInt32(Console.ReadLine()), count = 0;
+while (n > 0)
+{
+    n = n / 10;
+    count++; // count = count + 1
+}
+Console.WriteLine(count);
