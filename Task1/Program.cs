@@ -428,11 +428,20 @@ Console.WriteLine("Hello, World!");
  
 // Console.WriteLine(maxSumma);
 
-Console.Clear();
-Console.Write("Введите кол-во элементов массива: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[n];
-for (int i = 0; i < array.Length; i++)
-    array[i] = new Random().Next(-10, 11); // [-10, 10]
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// for (int i = 0; i < array.Length; i++)
+//     array[i] = new Random().Next(-10, 11); // [-10, 10]
 
-Console.WriteLine($"Результат: [{string.Join("    ", array)}]");
+// Console.WriteLine($"Результат: [{string.Join("    ", array)}]");
+
+void f(ref int n)
+{
+    n = n + 5;
+}
+
+int n = 10;
+f(ref n);
+Console.WriteLine(n);
