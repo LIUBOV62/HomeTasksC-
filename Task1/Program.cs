@@ -477,12 +477,68 @@ Console.WriteLine("Hello, World!");
 // Task 26
 
 
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine()), count = 0;
+// while (n > 0)
+// {
+//     n = n / 10;
+//     count++; // count = count + 1
+// }
+// Console.WriteLine(count);
+
+// Task 28
+
+
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine()), count = 1;
+// for (int i = 2; i <= n; i++)
+//     count = count * i;
+
+// Console.WriteLine(count);
+// Console.Clear();
+// Console.Write("Введите число кустов: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int[] arr = {4, 3, 2, 1}; // Урожай с кустов
+
+// int a[i] = [1, 2, 3, 4];
+// int max = 0;
+// int b = arr[arr.Length -1] + arr[0] + arr[1];
+// int c = arr[arr.Length -2] + arr[arr.Length -1] + arr[0];
+
+// if (b > c) 
+//     max = b; 
+// else 
+//     max = c;
+
+// for (int i = 0; i < arr.Length - 2; i++)
+// {   
+//     int a = arr[i] + arr[i + 1] + arr[i + 2];
+
+//     if (a > max)
+//     max = a;
+// }
+
+// Console.WriteLine($"Максимальное число ягод: {max} ");
+
+// Задача : Максимальное количество ягод 
 Console.Clear();
-Console.Write("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine()), count = 0;
-while (n > 0)
+Console.Write("Введите колличество кустов черники: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] a = new int[n + 2];
+int sum = 0;
+for (int i = 0; i < n; i++)
 {
-    n = n / 10;
-    count++; // count = count + 1
+    Console.Write("Число ягод черники на кусте: ");
+    a[i] = Convert.ToInt32(Console.ReadLine());
+    a[n] = a[0];
+    a[n + 1] = a[1];
 }
-Console.WriteLine(count);
+for (int i = 1; i < n + 1; i++)
+{
+    int sum1 = a[i - 1] + a[i] + a[i + 1];
+    if (sum1 > sum)
+        sum = sum1;
+}
+Console.WriteLine($"Максимальное колличество ягод: {sum}");
