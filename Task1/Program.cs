@@ -436,12 +436,32 @@ Console.WriteLine("Hello, World!");
 //     array[i] = new Random().Next(-10, 11); // [-10, 10]
 
 // Console.WriteLine($"Результат: [{string.Join("    ", array)}]");
+// фукция void
+// фукция voidif(ref int n)
+// {
+//     n = n + 5;
+// }
 
-void f(ref int n)
+// int n = 10;
+// f(ref n);
+// Console.WriteLine(n);
+// void f(ref int n)
+// {
+//     n = n + 5;
+// }
+
+// int n = 10;
+// f(ref n);
+// Console.WriteLine(n);
+
+// Напишите программу, которая принимает 2 числа и выводит наибольшее число.
+int f(int a, int b)
 {
-    n = n + 5;
+    if (a > b)
+        return a;
+    return b;
 }
 
-int n = 10;
-f(ref n);
-Console.WriteLine(n);
+
+int a = 10, b = 7;
+Console.WriteLine(f(a, b));
