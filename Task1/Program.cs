@@ -455,13 +455,21 @@ Console.WriteLine("Hello, World!");
 // Console.WriteLine(n);
 
 // Напишите программу, которая принимает 2 числа и выводит наибольшее число.
-int f(int a, int b)
-{
-    if (a > b)
-        return a;
-    return b;
-}
+// int f(int a, int b)
+// {
+//     if (a > b)
+//         return a;
+//     return b;
+// }
 
 
-int a = 10, b = 7;
-Console.WriteLine(f(a, b));
+// int a = 10, b = 7;
+// Console.WriteLine(f(a, b));
+
+// Task 24
+
+
+Console.Clear();
+Console.Write("Введите число: ");
+double n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($"Результат: {(1 + n) / 2 * n}");
