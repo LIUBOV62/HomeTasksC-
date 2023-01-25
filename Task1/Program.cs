@@ -548,13 +548,13 @@ Console.WriteLine("Hello, World!");
         //    и возводит число A в натуральную степень B.
 //            Math.Pow(ЗАПРЕЩЕНО) 3, 5 -> 243 (3⁵),  2, 4 -> 16
  Console.Clear();
-Console.Write("Введите 1-ое число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите 2-ое число: ");
-int m = Convert.ToInt32(Console.ReadLine());
-int temp =n;
+// Console.Write("Введите 1-ое число: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите 2-ое число: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// int temp =n;
 
-for (int i = 1; i < m; i++)
-    temp = n * temp;
+// for (int i = 1; i < m; i++)
+//     temp = n * temp;
 
-Console.WriteLine($"{temp}");
+// Console.WriteLine($"{temp}");
