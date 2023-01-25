@@ -523,22 +523,38 @@ Console.WriteLine("Hello, World!");
 // Console.WriteLine($"Максимальное число ягод: {max} ");
 
 // Задача : Максимальное количество ягод 
-Console.Clear();
-Console.Write("Введите колличество кустов черники: ");
+// Console.Clear();
+// Console.Write("Введите колличество кустов черники: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] a = new int[n + 2];
+// int sum = 0;
+// for (int i = 0; i < n; i++)
+// {
+//      Console.Write("Число ягод черники на кусте: ");
+//      a[i] = Convert.ToInt32(Console.ReadLine());
+//      a[n] = a[0];
+//      a[n + 1] = a[1];
+// }
+// for (int i = 1; i < n + 1; i++)
+// {
+//      int sum1 = a[i - 1] + a[i] + a[i + 1];
+//      if (sum1 > sum)
+//         sum = sum1;
+// }
+// Console.WriteLine($"Максимальное колличество ягод: {sum}");
+
+// Домашняя работа № 4
+// Задача 25: Напишите цикл, который принимает на вход два числа (A и B)
+        //    и возводит число A в натуральную степень B.
+//            Math.Pow(ЗАПРЕЩЕНО) 3, 5 -> 243 (3⁵),  2, 4 -> 16
+ Console.Clear();
+Console.Write("Введите 1-ое число: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int[] a = new int[n + 2];
-int sum = 0;
-for (int i = 0; i < n; i++)
-{
-     Console.Write("Число ягод черники на кусте: ");
-     a[i] = Convert.ToInt32(Console.ReadLine());
-     a[n] = a[0];
-     a[n + 1] = a[1];
-}
-for (int i = 1; i < n + 1; i++)
-{
-     int sum1 = a[i - 1] + a[i] + a[i + 1];
-     if (sum1 > sum)
-        sum = sum1;
-}
-Console.WriteLine($"Максимальное колличество ягод: {sum}");
+Console.Write("Введите 2-ое число: ");
+int m = Convert.ToInt32(Console.ReadLine());
+int temp =n;
+
+for (int i = 1; i < m; i++)
+    temp = n * temp;
+
+Console.WriteLine($"{temp}");
