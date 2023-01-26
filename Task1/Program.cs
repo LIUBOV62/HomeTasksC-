@@ -562,16 +562,29 @@ Console.WriteLine("Hello, World!");
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр
 //            в числе. 452 -> 11  82 -> 10  9012 -> 12
 
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int a = Convert.ToInt32(Console.ReadLine());
+// int sum = 0; 
+// int b=0;
+// while (a>0)
+// {
+//     b=a%10;
+//     sum=sum+b; 
+//     a=a/10;  
+// }
+// Console.WriteLine( $"Сумма цифр в числе: {sum}");
+
+// Задача 29: Напишите программу, которая задаёт массив из 8 элементов
+//            и выводит их на экран(ввод пользователя с клавиатуры).
+//            1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
+
 Console.Clear();
-Console.Write("Введите число: ");
-int a = Convert.ToInt32(Console.ReadLine());
-int sum = 0; 
-int b=0;
-while (a>0)
-{
-    b=a%10;
-    sum=sum+b; 
-    a=a/10;  
-}
-Console.WriteLine( $"Сумма цифр в числе: {sum}");
+int[] array = new int[8];
+for(int i = 0; i < array.Length; i++)
+    array[i] = new Random().Next(1, 50);
+Console.WriteLine($"Результат: [{string.Join(",", array)}]");
+    
+
+
 
