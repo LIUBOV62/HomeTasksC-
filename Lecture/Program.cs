@@ -12,7 +12,15 @@
 //  int result = namberA + namberB;
 //  Console.WriteLine(result);
 
+//  Console.Clear();
+//  double namberA = 12;
+//  double namberB = 5;
+//  Console.WriteLine(namberA / namberB);
+
  Console.Clear();
- double namberA = 12;
- double namberB = 5;
- Console.WriteLine(namberA / namberB);
+ int namberA = new Random().Next(1, 10);
+ Console.WriteLine(namberA);
+ int namberB = new Random().Next(1, 10);
+ Console.WriteLine(namberA);
+ int result = namberA + namberB;
+ Console.WriteLine(result);
