@@ -17,10 +17,25 @@
 //  double namberB = 5;
 //  Console.WriteLine(namberA / namberB);
 
- Console.Clear();
- int namberA = new Random().Next(1, 10);
- Console.WriteLine(namberA);
- int namberB = new Random().Next(1, 10);
- Console.WriteLine(namberA);
- int result = namberA + namberB;
- Console.WriteLine(result);
+//  Console.Clear();
+//  int namberA = new Random().Next(1, 10);
+//  Console.WriteLine(namberA);
+//  int namberB = new Random().Next(1, 10);
+//  Console.WriteLine(namberA);
+//  int result = namberA + namberB;
+//  Console.WriteLine(result);
+
+Console.Clear();
+Console.WriteLine("Введите имя пользователя:");
+string? lastname = Console.ReadLine();
+
+if(lastname.ToLower() == "маша")
+
+    Console.WriteLine("Ура, это же МАША!");
+
+else
+
+    Console.Write("Привет, ");
+    Console.WriteLine(lastname);
+
+
