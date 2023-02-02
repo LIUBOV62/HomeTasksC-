@@ -1,0 +1,15 @@
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\bin\Debug\net6.0\Lecture_2.exe
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\bin\Debug\net6.0\Lecture_2.deps.json
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\bin\Debug\net6.0\Lecture_2.runtimeconfig.json
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\bin\Debug\net6.0\Lecture_2.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\bin\Debug\net6.0\Lecture_2.pdb
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.csproj.AssemblyReference.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.AssemblyInfoInputs.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.AssemblyInfo.cs
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\refint\Lecture_2.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.pdb
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\Lecture_2.genruntimeconfig.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\Lecture_2\obj\Debug\net6.0\ref\Lecture_2.dll
