@@ -1,0 +1,15 @@
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\bin\Debug\net6.0\HomeTask_43.exe
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\bin\Debug\net6.0\HomeTask_43.deps.json
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\bin\Debug\net6.0\HomeTask_43.runtimeconfig.json
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\bin\Debug\net6.0\HomeTask_43.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\bin\Debug\net6.0\HomeTask_43.pdb
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.csproj.AssemblyReference.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.AssemblyInfoInputs.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.AssemblyInfo.cs
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.csproj.CoreCompileInputs.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\refint\HomeTask_43.dll
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.pdb
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\HomeTask_43.genruntimeconfig.cache
+C:\Users\Владимир\Desktop\Programming1pr\HomeTasksC-\HomeTask_43\obj\Debug\net6.0\ref\HomeTask_43.dll
