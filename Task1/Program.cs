@@ -575,6 +575,17 @@ Console.WriteLine("Hello, World!");
 // }
 // Console.WriteLine( $"Сумма цифр в числе: {sum}");
 
+// Эту задачу на семинаре так записали.
+// Console.Clear();
+// Console.Write("Введите число: ");
+// int n = Convert.ToInt32(Console.ReadLine()), result = 0;
+// while (n > 0)
+// {
+//     result = result + n % 10; // result += n %  10;
+//     n = n / 10; // n /= 10;
+// }
+// Console.WriteLine(result);
+
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов
 //            и выводит их на экран(ввод пользователя с клавиатуры).
 //            1, 2, 5, 7, 19, 6, 1, 33 -> [1, 2, 5, 7, 19, 6, 1, 33]
@@ -586,15 +597,321 @@ Console.WriteLine("Hello, World!");
 // Console.WriteLine($"Результат: [{string.Join(",", array)}]");
     
 
-Console.Clear();
-// Console.Write("Введите количество элементов массива: ");
+// Console.Clear();
+// // Console.Write("Введите количество элементов массива: ");
 
+// // int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[8];
+
+// for(int i = 0; i < array.Length; i++) 
+// {
+//        Console.Write($"Введите элемент массива под индексом {i}: ");
+//        array[i] = Convert.ToInt32(Console.ReadLine());
+// }
+//        Console.WriteLine($"Результат: [{string.Join(",", array)}]");
+
+// СЕМИНАР 5
+
+// Задача 31: Задайте массив из 12 элементов, заполненный случайными числами из промежутка 
+//            [-9, 9]. Найдите сумму отрицательных и положительных элементов массива.
+//            Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма положительных чисел
+//            равна 29, сумма отрицательных равна -20.
+// task 31
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10); // [-9, 9]
+// }
+
+
+// void ReleaseArray(int[] array)
+// {
+//     int summaPositive = 0, summaNegative = 0;
+//     foreach (int element in array)
+//     {
+//         if (element > 0)
+//             summaPositive += element;
+//         else
+//             summaNegative += element;
+//     }
+//     Console.WriteLine($"Сумма положительных чисел равна: {summaPositive}");
+//     Console.WriteLine($"Сумма отрицательных чисел равна: {summaNegative}");
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
 // int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[8];
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
+// ReleaseArray(array);
 
-for(int i = 0; i < array.Length; i++) 
+
+// / task 31
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10); // [-9, 9]
+// }
+
+
+// void ReleaseArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] *= (-1); // array[i] = array[i] * (-1);
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
+// ReleaseArray(array);
+// Console.WriteLine($"Конечный массив: [{string.Join(", ", array)}]");
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10); // [-9, 9]
+// }
+
+
+// string ReleaseArray(int[] array, int number)
+// {
+//     foreach (int element in array)
+//     {
+//         if (element == number)
+//             return "yes";
+//     }
+//     return "no";
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
+// Console.Write("Введите число, которое Вы ищите внутри массива: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(ReleaseArray(array, number));
+
+// Задача 35: Задайте одномерный массив из 123 случайных чисел. Найдите количество 
+//            элементов массива, значения которых лежат в отрезке [10,99]. 
+//            Пример для массива из 5, а не 123 элементов. В своём решении сделайте для 123
+//            [5, 18, 123, 6, 2] -> 1
+//            [1, 2, 3, 6, 2] -> 0
+//            [10, 11, 12, 13, 14] -> 5
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-100, 101); // [-9, 9]
+// }
+
+
+// int ReleaseArray(int[] array)
+// {
+//     int count = 0;
+//     foreach (int element in array)
+//     {
+//         if (element >= 10 && element <= 99)
+//             count++; // count = count + 1;
+//     }
+//     return count;
+// }
+
+
+// Console.Clear();
+// // Console.Write("Введите кол-во элементов массива: ");
+// // int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[123];
+// InputArray(array);
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
+// Console.WriteLine(ReleaseArray(array));
+
+// Задача 37
+
+// void InputArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//         array[i] = new Random().Next(-9, 10); // [-9, 9]
+// }
+
+
+// void ReleaseArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length / 2 + array.Length % 2; i++)
+//         Console.Write($"{array[i] * array[array.Length - i - 1]} ");
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.WriteLine($"Начальный массив: [{string.Join(", ", array)}]");
+// ReleaseArray(array);
+
+// ЗАДАЧА: Задайте массив заполненный случайными положительными трёхзначными числами. 
+//    Напишите программу, которая покажет количество чётных чисел в массиве
+
+// Console.Clear();
+// Console.Write("Введите кол-во элементов массива: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[n];
+// InputArray(array);
+// Console.Write("Массив: ");
+// ReleaseArray(array);
+// int count = 0;
+
+// for (int i = 0; i < array.Length; i++)
+// if (array[i] %2 == 0)
+//     count++;
+
+// Console.WriteLine($"Всего {array.Length}, {count}  четные");
+
+// void InputArray(int[] array)
+// {
+// for (int i = 0; i < array.Length; i++)
+// array[i] = new Random().Next(100, 1000);
+// }
+
+// void ReleaseArray(int[] array)
+// {
+// for (int i = 0; i < array.Length; i++)
+// {
+//     Console.Write(array[i] + " ");
+// }
+//     Console.WriteLine();
+// // }
+
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i, j] = new Random().Next(1, 11); // [1, 10]
+//             Console.Write($"{matrix[i, j]} ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите размеры массива: ");
+// int[] size = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+// int[,] matrix = new int[size[0], size[1]];
+// InputMatrix(matrix);
+
+// // Задача 50:
+// //  Напишите программу, которая на вход принимает позиции элемента в двумерном массиве,
+// //  и возвращает значение этого элемента или же указание, что такого элемента нет
+Console.Clear();
+Console.Write("Введите позицию элемента строки: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите позицию элемента столбца: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[,] matrix = new int[3, 4];
+InputMatrix(matrix);
+
+
+if (m > matrix.GetLength(0) || n > matrix.GetLength(1))
 {
-       Console.Write($"Введите элемент массива под индексом {i}: ");
-       array[i] = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Такого элемента нет: ");
 }
-       Console.WriteLine($"Результат: [{string.Join(",", array)}]");
+else
+{
+Console.WriteLine($"Значение элемента{m}строкии {n} столбца равно {matrix[m - 1 , n - 1]}");
+
+}
+void InputMatrix(int[,] matrix)
+{
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            matrix[i, j] = new Random().Next(1, 11);
+            Console.Write($"{matrix[i, j]} \t");
+        }
+        Console.WriteLine();
+    }
+}
+
+
+// Задача50
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i, j] = new Random().Next(1, 11);
+//             Console.Write($"{matrix[i, j]} \t");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+// Console.Clear();
+// Console.Write("Введите позицию элемента строки: ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите позицию элемента столбца: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[,] matrix = new int[3, 4];
+// InputMatrix(matrix);
+
+
+// if (m > matrix.GetLength(0) && n > matrix.GetLength(1))
+// {
+//     Console.WriteLine("Элемент отсутствует");
+// }
+// else
+// {
+// Console.WriteLine($"Значение элемента с позицией({m}, {n})равно{matrix[m - 1, n - 1]}");
+// }
+
+//  ЗАДАЧА 50:
+//  void InputMatrix(double[,] matrix)
+// {
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+// for (int j = 0; j < matrix.GetLength(1); j++)
+// {
+// matrix[i, j] = Math.Round(new Random().NextDouble() * (20 + 20) - 20, 2);
+// Console.Write($"{matrix[i, j]} \t");
+// }
+// Console.WriteLine();
+// }
+// }
+
+
+// double SearchElementToMatrix(double[,] matrix, int row, int column)
+// {
+// if (matrix.GetLength(0) > row && matrix.GetLength(1) > column && row >= 0 && column >= 0)
+// return matrix[row, column];
+// return 0;
+// }
+
+
+// Console.Clear();
+// Console.Write("Введите размеры массива: ");
+// int[] size = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+// double[,] matrix = new double[size[0], size[1]];
+// InputMatrix(matrix);
+// int[] coord = Console.ReadLine().Split().Select(x => int.Parse(x)).ToArray();
+// Console.Write("Введите позицию элемента: ");
+// double result = SearchElementToMatrix(matrix, coord[0] - 1, coord[1] - 1);
+// if (result != 0)
+// Console.WriteLine(result);
+// else
+// Console.WriteLine("Такого числа нет");
+
